@@ -7,13 +7,13 @@ The data stored in the app will be stored within the app storage.No database Use
 > AsyncStorage
 
 `Features`
-```New Note```<br>
-```Edit existing Note```<br>
-```Delete Note```<br>
-```Save alert when unsaved```<br>
+>New Note
+>Edit existing Note
+>Delete Note
+>Save alert when unsaved
 
 
 *TO-DO*
->auto delete<br>
+>auto delete
 >remainder
 
