@@ -4,9 +4,9 @@
     "slug": "dayScheduler",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Notes-icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/Notes-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -21,12 +21,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/Notes-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.aravinthraj98.dayScheduler"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": ""
   }
 }

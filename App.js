@@ -1,13 +1,30 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Home from "./components/home"
+import Show from "./navigation/navigate"
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+import {Context} from './components/Context';
 
 export default function App() {
+
+   const[data,setdata]=useState([]);
+
+    useEffect(()=>{
+           (async () => {
+               const res = await AsyncStorage.getItem('myNotes');
+               setdata(JSON.parse(res));
+              
+               
+           })();
+    }, []);
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Context.Provider value={[data,setdata]}>
+    
+      <Show />
+      </Context.Provider>
+    
   );
 }
 
